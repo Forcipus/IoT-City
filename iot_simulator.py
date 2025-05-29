@@ -4,7 +4,7 @@ from azure.iot.device import IoTHubDeviceClient, Message
 import os
 
 # Azure IoT Hub bağlantı dizesi
-conn_str = "HostName=smartcityiot.azure-devices.net;DeviceId=device001;SharedAccessKey=7Fd6VC4uyOlCSHDpn90JE+vGb68D+rgCt1sfeLAMnjQ="
+conn_str = "     "
 
 # Cihaz istemcisini oluştur
 device_client = IoTHubDeviceClient.create_from_connection_string(conn_str)
