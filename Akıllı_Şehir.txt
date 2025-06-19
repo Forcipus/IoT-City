@@ -1,0 +1,8 @@
+Bu proje, MQTT protokolü ile IoT cihazlarından gelen sıcaklık ve nem verilerini Azure IoT Hub’a gönderir, Event Hub üzerinden bu verileri alır ve gerçek zamanlı analiz eder. Veriler bir CSV dosyasına kaydedilir ve istenirse grafik üzerinde görselleştirilebilir. Sistem, akıllı şehirdeki cihazların merkezi yönetimi ve izlenmesi için temel bir yapı sunar.
+
+## İçindekiler
+
+- `iot_simulator.py`: Rastgele sıcaklık ve nem verisi üreten ve Azure IoT Hub’a gönderen cihaz simülatörü.
+- `azure_eventhub_listener.py`: Azure Event Hub’dan gelen verileri gerçek zamanlı alıp analiz eden ve CSV dosyasına kaydeden uygulama.
+- `iot_data.csv`: Toplanan sıcaklık ve nem verilerinin kaydedildiği dosya.
+- `grafik_ciz.py`: CSV dosyasındaki verileri okuyup sıcaklık ve nem için grafik çizen Python scripti.
